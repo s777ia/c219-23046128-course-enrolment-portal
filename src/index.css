@@ -85,11 +85,31 @@ nav a:hover,
   text-decoration: none;
   padding: 0.25em 0.4em;
 }
+
 .categories a:hover, 
 a.category-active {
   color: #fff;
   background-color: #605e5e;
   border-radius: 3px;
+}
+
+.saved-courses-list a {
+  font-weight: 500;
+  color: #605e5e;
+  text-decoration: none;
+  padding: 0.25em 0.4em;
+}
+
+.saved-courses-list a:hover, 
+a.category-active {
+  color: #fff;
+  background-color: #605e5e;
+  border-radius: 3px;
+}
+
+.saved-courses {
+  display: flex;
+  justify-content: space-between;
 }
 
 .session a {
@@ -208,6 +228,11 @@ footer.container {
   margin: 0 auto;
 }
 
+.diploma-name {
+  display: flex;
+  align-items: center;
+}
+
 /* media queries */
 @media (max-width: 767px) {
   nav a {
@@ -237,6 +262,7 @@ footer.container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   form {
     width: 60%;
   }

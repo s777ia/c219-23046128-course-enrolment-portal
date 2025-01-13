@@ -12,4 +12,4 @@ function SearchBar({ searchQuery, setSearchQuery }) {
     )
 }
 
-export default SearchBar;
+export default SearchBar;   
