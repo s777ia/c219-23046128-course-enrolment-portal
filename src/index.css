@@ -57,7 +57,7 @@ ul li {
 /* nav & links */
 
 a {
-  color: #e7212b;
+  color: #80ba26;
 }
 
 a:hover {
@@ -67,7 +67,7 @@ a:hover {
 nav a {
   display: block;
   font-size: 1.25rem;
-  color: #DD1F26;
+  color: #605e5e;
   padding-bottom: 0.15em;
   border-bottom: 2px solid transparent;
   font-weight: 500;
@@ -76,7 +76,7 @@ nav a {
 
 nav a:hover, 
 .nav-active {
-  color: #5dabaa;
+  color: #80ba26;
 }
 
 .categories a {
@@ -89,7 +89,7 @@ nav a:hover,
 .categories a:hover, 
 a.category-active {
   color: #fff;
-  background-color: #605e5e;
+  background-color: #80ba26;
   border-radius: 3px;
 }
 
@@ -103,7 +103,7 @@ a.category-active {
 .saved-courses-list a:hover, 
 a.category-active {
   color: #fff;
-  background-color: #605e5e;
+  background-color: #80ba26;
   border-radius: 3px;
 }
 
@@ -123,7 +123,7 @@ a.category-active {
 
 .session a:hover, 
 a.session-active {
-  color: #489b9a;
+  color: #80ba26;
 }
 
 /* components & assets */
@@ -189,11 +189,31 @@ input[type="submit"] {
   color: #fff;
   font-weight: bold;
   padding: 0.65em 0;
-  background-color: #75bebd;
+  background-color: #80ba26;
   border: none;
 }
 input[type="submit"]:hover {
-  background-color: #5dabaa;
+  background-color: #5c871b;
+}
+
+.diploma-name {
+  display: flex;
+  align-items: center;
+}
+
+.course-list-dropdown {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: red;
 }
 
 /* layout */
@@ -228,10 +248,6 @@ footer.container {
   margin: 0 auto;
 }
 
-.diploma-name {
-  display: flex;
-  align-items: center;
-}
 
 /* media queries */
 @media (max-width: 767px) {

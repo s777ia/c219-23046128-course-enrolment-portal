@@ -1,11 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
+import { getDiplomas } from "../api";
 
 export default function Register() {
   const navigate = useNavigate();
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const courseRef = useRef(null);
+
+  const diplomas = getDiplomas();
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -19,7 +22,7 @@ export default function Register() {
         Please register the course you are interested!
       </p>
       <form onSubmit={handleSubmit}>
-      <label>
+        <label>
           Name:
           <input type="text" name="name" ref={nameRef} />
         </label>
@@ -29,7 +32,14 @@ export default function Register() {
         </label>
         <label>
           Course:
-          <input type="text" name="email" ref={courseRef} />
+          <select name="diplomas" id="diplomas" className="course-list-dropdown">
+            <option value="" disabled selected>
+              Select a course
+            </option>
+            {diplomas.map(diploma => (
+              <option value={diploma.name} ref={courseRef}>{diploma.name}</option>
+            ))}
+          </select>
         </label>
         <input type="submit" value="Submit" />
       </form>
