@@ -80,10 +80,12 @@ nav a:hover,
 }
 
 .categories a {
+  display: block;
   font-weight: 500;
   color: #605e5e;
   text-decoration: none;
-  padding: 0.25em 0.4em;
+  padding: 0.5em 1em;
+  margin-left: 10px;
 }
 
 .categories a:hover, 
@@ -201,9 +203,12 @@ input[type="submit"]:hover {
   align-items: center;
 }
 
-.course-list-dropdown {
-  margin-left: 10px;
-  padding: 5px;
+select {
+  font-size: 1em;
+  margin-top: 0.35em;
+  display: block;
+  width: 100%;
+  padding: 0.5em;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
@@ -214,6 +219,16 @@ input[type="submit"]:hover {
 
 .delete-icon:hover {
   color: red;
+}
+
+.faq-section-title {
+  background-color: #5c871b;
+  padding: 20px 30px;
+  color: #ffff
+}
+
+.faq-question {
+  padding: 20px 30px;
 }
 
 /* layout */
@@ -276,6 +291,7 @@ footer.container {
   }
   .categories {
     display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr;
   }
 

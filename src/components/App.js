@@ -8,6 +8,7 @@ import Register from "./Register";
 import Confirmation from "./Confirmation"
 import SavedCourses from './SavedCourses';
 import Header from "./Header";
+import FAQ from "./FAQ";
 
 function App() {
   const [favourites, setFavourites] = useState([]);
@@ -25,12 +26,13 @@ function App() {
           </Route>
           <Route index element={<h3>Select a diploma from above</h3>} />
         </Route>
-        <Route path="register" element={<Register />} />
-        <Route path="confirmed" element={<Confirmation />} />
         <Route
           path="saved-courses"
           element={<SavedCourses favourites={favourites} setFavourites={setFavourites} />}
         />
+        <Route path="faq" element={<FAQ />} />
+        <Route path="register" element={<Register />} />
+        <Route path="confirmed" element={<Confirmation />} />
         <Route
           path="*"
           element={<h1 className="not-found">Page Not Found</h1>}

@@ -25,6 +25,9 @@ export default function Header() {
         <NavLink to="/saved-courses" className={getClass}>
           Saved Courses
         </NavLink>
+        <NavLink to="/faq" className={getClass}>
+          FAQ
+        </NavLink>
         <NavLink to="/register" className={getClass}>
           Register
         </NavLink>
