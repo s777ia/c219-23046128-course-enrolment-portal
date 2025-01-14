@@ -76,6 +76,7 @@ const diplomas = [
   {
     name: "Information Technology",
     id: "information-technology",
+    desc: "Shape the digital landscape with the Diploma in Information Technology! This programme offers a comprehensive toolkit for software development, IT solutions management, and business transformation. Prepare for a diverse range of roles in software development and IT management with specialised majors tailored to industry demands.",
     modules: [
       {
         name: "UI/UX Design for Apps",
@@ -100,6 +101,7 @@ const diplomas = [
   {
     name: "Financial Technology",
     id: "financial-technology",
+    desc: "Transform the finance industry with cutting-edge technology. The Diploma in Financial Technology equips you with essential FinTech software development skills, covering key concepts such as anti-money laundering, compliance analytics, blockchain and digital payments. Gain real-world experience through internships and explore entrepreneurship opportunities to thrive in the evolving world of finance and tech.",
     modules: [
       {
         name: "Software Application Development",
@@ -124,6 +126,7 @@ const diplomas = [
   {
     name: "Applied AI & Analytics",
     id: "applied-ai-analytics",
+    desc: "Shape the world with AI and Analytics! Work with the ever-increasing data to transform it into actionable insights. With this data, you can learn how to create compelling AI solutions that will propel digital innovations for organisations.",
     modules: [
       {
         name: "AI Essentials and Innovations",
@@ -148,6 +151,7 @@ const diplomas = [
   {
     name: "Enterprise Cloud Computing & Management",
     id: "cloud-computing-management",
+    desc: "Transform your future with a Diploma in Enterprise Cloud Computing & Management. Gain essential skills in cloud computing, IT systems and AI to drive innovation and become a leader in the tech industry",
     modules: [
       {
         name: "DevOps Fundamentals",
@@ -172,6 +176,7 @@ const diplomas = [
   {
     name: "Cybersecurity & Digital Forensics",
     id: "cybersecurity-digital-forensics",
+    desc: "Master the art of cyber defence and respond to cybersecurity threats. You will also navigate the complexities of cybersecurity governance and implement practices of governance to help organisations stay ahead of regulatory demands and protect sensitive information. Learn to integrate security into the software development process, ensuring robust and resilient applications.",
     modules: [
       {
         name: "Digital Security and Forensics",
@@ -196,6 +201,7 @@ const diplomas = [
   {
     name: "Common ICT Programme",
     id: "common-ict",
+    desc: "Code your destiny with the Common ICT Programme. Gain a solid foundation and turn your tech passions into a rewarding journey. Join us to unlock your potential and make a splash in the exciting world of ICT!",
     modules: [
       {
         name: "Programming Fundamentals I",

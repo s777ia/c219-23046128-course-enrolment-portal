@@ -22,7 +22,9 @@ export default function SavedCourses({ favourites, setFavourites }) {
         <ul className="saved-courses-list">
           {savedDiplomas.map((diploma) => (
             <li key={diploma.id} className={"saved-courses"}>
+              <div>
               <NavLink to={`/diplomas/${diploma.id}`}>{diploma.name}</NavLink>
+              </div>
               <FontAwesomeIcon icon={faTrash} className={"delete-icon"} onClick={() => handleDeleteFavourites(diploma.id)}/>
               </li>
           ))}

@@ -30,6 +30,7 @@ export default function Diploma({ favourites, setFavourites }) {
         onClick={() => handleAddToFavourites(diploma.id)} 
       />
       </div>
+      <p>{diploma.desc}</p>
       <ul className="session-list">
         {diploma?.modules.map(module => (
           <li className="session" key={module.id}>
